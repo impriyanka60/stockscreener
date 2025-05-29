@@ -1,0 +1,12 @@
+/* src/components/Header.css */
+.header {
+    background-color: #111;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  .header a {
+    color: white;
+    text-decoration: none;
+  }
+  
