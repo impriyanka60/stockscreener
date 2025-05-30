@@ -1,71 +1,121 @@
 .compare {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-symbols {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-symbols input {
+  padding: 10px;
+  font-size: 16px;
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-symbols button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-symbols button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: auto;
+  display: block;
+  white-space: nowrap;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  min-width: 120px;
+}
+
+table th {
+  background-color: #f4f4f4;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-size: 18px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
   .input-symbols {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .input-symbols input {
-    padding: 10px;
-    font-size: 16px;
-    width: 150px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
+
+  .input-symbols input,
   .input-symbols button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    width: 80%;
+    max-width: 300px;
   }
-  
-  .input-symbols button:hover {
-    background-color: #0056b3;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
+
   table th,
   table td {
-    padding: 12px;
-    text-align: left;
-    border: 1px solid #ddd;
+    font-size: 14px;
+    padding: 8px;
   }
-  
-  table th {
-    background-color: #f4f4f4;
+
+  h2 {
+    font-size: 20px;
   }
-  
-  table tr:nth-child(even) {
-    background-color: #f9f9f9;
+}
+@media (max-width: 600px) {
+  .compare {
+    padding: 10px;
   }
-  
-  .error {
-    color: red;
-    text-align: center;
-    font-size: 18px;
+
+  .chart-container {
+    
+    padding: 0 10px;
+    max-width: 100%;
+    height: 250px;
   }
-  
-  .loading {
-    text-align: center;
-    font-size: 18px;
+
+  table {
+    margin-top: 10px;
   }
-  
+}
+.chart-containeer {
+  max-width: 900px;   /* You can reduce this further */
+  height: 600px;      /* Adjust height */
+  margin: 0 auto;     /* Center align */
+}
+
