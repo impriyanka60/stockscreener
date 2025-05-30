@@ -40,7 +40,7 @@
 
 .hamburger {
   display: none;
-  background-color: white;
+  background-color: transparent;
   flex-direction: column;
   justify-content: space-between;
   width: 25px;
@@ -74,7 +74,7 @@
     top: 60px;
     left: 0;
     right: 0;
-    background-color: #111;
+    background-color: #eeedd2;
     flex-direction: column;
     align-items: center;
     width: 100%;
