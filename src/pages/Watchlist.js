@@ -27,6 +27,15 @@ const Watchlist = () => {
       setCompanies([]);
     }
   }, [watchlist, API_KEY]);
+  useEffect(() => {
+  const saved = localStorage.getItem('watchlist');
+  if (saved) setWatchlist(JSON.parse(saved));
+}, []);
+
+useEffect(() => {
+  localStorage.setItem('watchlist', JSON.stringify(watchlist));
+}, [watchlist]);
+
 
   const handleAdd = () => {
     const symbol = newSymbol.trim().toUpperCase();
