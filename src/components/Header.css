@@ -50,6 +50,7 @@
 
 .hamburger div {
   background-color: black;
+   color:white;
   height: 3px;
   border-radius: 2px;
   transition: 0.3s;
